@@ -15,6 +15,9 @@ import { UserModule } from './user/user.module';
       password: 'root',
       database: 'migrations-seeders',
       models: [User],
+      define: {
+        timestamps: true,
+      },
     }),
     UserModule,
   ],
